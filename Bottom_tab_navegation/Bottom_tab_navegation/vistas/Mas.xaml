@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Bottom_tab_navegation.vistas.Mas"
+             Title="Más">
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Label HorizontalOptions="Start" FontSize="Large" Margin="10,10,10,0">General</Label>
+
+            <BoxView   VerticalOptions="Center"
+               HorizontalOptions="FillAndExpand"
+               Margin="10,3"
+               HeightRequest="1"
+               WidthRequest="50"  
+               Color="#5b5d68"></BoxView>
+            <Button x:Name="btn_formacion" Text="Formación titular" ContentLayout="Left,0" Image="ic_formacion" Margin="5,0" HorizontalOptions="FillAndExpand" Clicked="btn_formacion_Clicked"/>
+            <Button Text="Noticias" ContentLayout="Left,0" Image="ic_noticias" Margin="5,0" HorizontalOptions="FillAndExpand" />
+            <Button Text="Rumores, Altas, Bajas" ContentLayout="Left,0" Image="ic_altasybajas" Margin="5,0" HorizontalOptions="FillAndExpand" />
+            <Button Text="Selección Colombia" ContentLayout="Left,0" Image="ic_seleccion" Margin="5,0" HorizontalOptions="FillAndExpand" />
+            
+            <Label HorizontalOptions="Start" FontSize="Large" Margin="10,10,10,0">Comunidad</Label>
+
+            <BoxView   VerticalOptions="Center"
+               HorizontalOptions="FillAndExpand"
+               Margin="10,3"
+               HeightRequest="1"
+               WidthRequest="50"  
+               Color="#5b5d68"></BoxView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

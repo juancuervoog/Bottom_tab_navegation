@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vistas="clr-namespace:Bottom_tab_navegation.vistas"
+             mc:Ignorable="d"
+             x:Class="Bottom_tab_navegation.TabbedPage1"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom">
+    <!--Pages can be added as references or inline-->
+    <TabbedPage.Children>
+        <NavigationPage Title="Principal" IconImageSource="ic_principal">
+            <x:Arguments>
+                <vistas:Principal/>
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Calendario" IconImageSource="ic_calendario">
+            <x:Arguments>
+                <vistas:Calendario/>
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Posiciones" IconImageSource="ic_posiciones">
+            <x:Arguments>
+                <vistas:Posiciones/>
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Más" IconImageSource="ic_mas">
+            <x:Arguments>
+                <vistas:Mas/>
+            </x:Arguments>
+        </NavigationPage>
+    </TabbedPage.Children>
+</TabbedPage>
